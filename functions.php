@@ -32,12 +32,12 @@ function mytheme_supports()
 }
 
 function mytheme_menu_class($classes){
-    $classes[] = 'nav_item';
+    $classes[] = 'nav-item';
     return $classes;
 }
 
 function mytheme_menu_link_class($attrs){
-    $attrs['class'] = 'nav_link';
+    $attrs['class'] = 'nav-link';
     return $attrs;
 }
 
