@@ -45,3 +45,13 @@ add_action('after_setup_theme', 'mytheme_supports');
 add_action('wp_enqueue_scripts', 'mytheme_register_assets');
 add_filter('nav_menu_css_class', 'mytheme_menu_class');
 add_filter('nav_menu_link_attributes', 'mytheme_menu_link_class');
+
+add_action( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+
+function add_extra_item_to_nav_menu( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == 'header') {
+        $items .= '<li class="menu"><a href="http://planty.local/admin/">Admin</a></li>';
+    }
+
+    return $items;
+}

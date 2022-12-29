@@ -1,8 +1,10 @@
 <div class="footerContainer">
     <footer>
-        <ul class="mainFooter">
-            <li><a href="http://planty.local/mentions-legales">Mentions légales</a></li>
-        </ul>
+        <?php wp_nav_menu([
+            'theme_location' => 'footer',
+            'container' => false,
+            'menu_class' => 'navbar-nav'])
+        ?>
     </footer>
 </div>
 <?php wp_footer() ?>

@@ -36,10 +36,11 @@ Version: 2023
 }
 
 .footerContainer{
-    height: 60px;
-    width: 1440px;
+    margin-top: 25px;
     background: #FFFFFF;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a{
@@ -48,10 +49,6 @@ footer a{
     font-weight: 600;
 }
 
-.mainFooter{
-    margin-top: 25px;
-    padding-left: 800px;
-}
 
 .selector{
     transform: rotate(90deg);
