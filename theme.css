@@ -7,13 +7,16 @@ Template: blankslate
 Version: 2023
 */
 
-.nav-item {
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+body{
+    max-width: 1440px;
+    height: auto;
+    margin: auto;
 }
 
 .menu{
     display: flex;
-    align-items: center;
     list-style: none;
 }
 .menu a{
@@ -34,6 +37,25 @@ Version: 2023
     border-color:#DC9F96 ;
     font-size: 20px;
 }
+
+.canette{
+    background-image: url("./assets/Group3.png"), url("../../uploads/2022/12/Group-4.png");
+    background-size: 192px 220px;
+    background-position-x: 63%, 40%;
+    background-position-y: center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 591px) { 
+    .canette{
+        background-image: url("./assets/Group3.png"), url("./assets/Group-4.png");
+        background-size: 152px 100px;
+        background-position-x: 73%, 30%;
+        background-position-y: center;
+        background-repeat: no-repeat, no-repeat;
+    }
+ }
+
 
 .footerContainer{
     margin-top: 25px;
@@ -63,3 +85,160 @@ footer a{
 	align-items: center;
 	justify-content: center;
 }
+
+.btnform .wpcf7-spinner{
+    margin: 0 !important;
+}
+
+.products-list-form{
+    font-family: 'Syne', sans-serif;
+    margin-top: 40px;
+}
+.products-list-form h2{
+    font-weight: 800 !important;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.titre{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.info-form h3{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.info-form label, .info-form p{
+    width: 100%;
+}
+
+
+.info-form{
+    margin-top: 50px;
+}
+
+.img-fraise{
+    background-image:url("./assets/fraise.png");
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.img-pample{
+    background-image:url("./assets/pamplemousse.png");
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.img-fromboise{
+    background-image:url("./assets/framboise.png");
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.img-citron{
+    background-image:url("./assets/citron.png");
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.quantity{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.input-quantity{
+    border-style: none;
+    background: #FFFFFF;
+    width: 55px;
+    height: 56px;
+    border-radius: 7px 0 0 7px; 
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plus-minus{
+    display: flex;
+    flex-direction: column;
+    background: #DC9F96;
+    width: 35px;
+    height: 56px;
+    border-radius: 0 7px 7px 0;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.center{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+hr.solid {
+    border: 1px solid #FFFFFF;
+    width: 35px;
+}
+
+.btn-ok{
+    width: 130px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E0B9B4;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 24px;
+}
+
+.vl {
+    border: 1px solid #FFFFFF;
+    height: 400px;
+    width: 0;
+    margin-top: 50px;
+  }
+
+.divider{
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    margin: 10px;
+}
+
+@media (min-width: 768px) { 
+    .borderleft{
+        border-left: 1px solid #FFFFFF;
+        padding-left: 40px !important;
+        
+    }
+    .info-form .col-md-6:first-child{
+        padding-right: 40px;
+    }
+ }
+
